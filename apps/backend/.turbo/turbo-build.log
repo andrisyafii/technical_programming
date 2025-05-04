@@ -1,0 +1,24 @@
+
+> backend@1.0.0 build
+> tsc
+
+src/config/firebaseConfig.ts(1,27): error TS2307: Cannot find module 'firebase-admin' or its corresponding type declarations.
+src/config/firebaseConfig.ts(2,25): error TS2307: Cannot find module 'dotenv' or its corresponding type declarations.
+src/routes/userRoutes.ts(8,12): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response, next: NextFunction) => Promise<Response<any, Record<string, any>> | undefined>' is not assignable to parameter of type 'PathParams'.
+src/routes/userRoutes.ts(10,40): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>>>' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Promise<...>' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+src/routes/userRoutes.ts(11,41): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Argument of type '(req: Request, res: Response) => Promise<Response<any, Record<string, any>>>' is not assignable to parameter of type 'Application<Record<string, any>>'.
+      Type '(req: Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>, res: Response<any, Record<string, any>>) => Promise<...>' is missing the following properties from type 'Application<Record<string, any>>': init, defaultConfiguration, engine, set, and 63 more.
+npm error Lifecycle script `build` failed with error:
+npm error code 2
+npm error path C:\Users\safiim\Documents\technical_test\apps\backend
+npm error workspace backend@1.0.0
+npm error location C:\Users\safiim\Documents\technical_test\apps\backend
+npm error command failed
+npm error command C:\WINDOWS\system32\cmd.exe /d /s /c tsc
